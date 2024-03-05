@@ -16,11 +16,30 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height:100vh;
+    min-height:100vh;
 }
 
 article{
-    width:23.437rem;
-    height:23.437rem;
+    width:15rem;
+    height:15rem;
     background: red;
 }
+
+/* IN EEN MEDIAQUERY IS 1REM ALTIJD EVEN GROOT ALS DE BROWSER FONT-SIZE, ONGEACHT WAT ER IN HTML STAAT */
+
+
+.vierkant{
+    background: blue;
+}
+
+#vierkant{
+    background:green;
+}
+
+/*
+important
+inline ccs zoals <article style="background: pink">
+id zoals #vierkant #story
+class zoals .vierkant .button .bigImage
+tag zoals article, p, button. psuedo classes zoals :hover
+*/
