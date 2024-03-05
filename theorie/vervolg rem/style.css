@@ -4,12 +4,23 @@
     box-sizing: border-box;
 }
 
-body{
+/* 1rem = standaard 16 pixels maar kan veranderd worden in html tag*/
 
+html{
+    /* REGEL 11 MAG JE NOOIT DOEN */
+    /* font-size:10px;  1rem => 10px */
+    font-size: 62.5%; /*bij een standaardgrootte van 16px is 1 rem nu 10px. Bij 64px lettergrootte is 1 rem 40px */
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
 }
 
 article{
-    width: 25rem;
-    height: 400px;
+    width:23.437rem;
+    height:23.437rem;
     background: red;
 }
